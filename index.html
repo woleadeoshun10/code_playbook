@@ -195,12 +195,12 @@ bullet list html mdn on google to search how to use an element -->
   You can get a random image from this website.
   <br />
   &lt; img = src = "https://picsum.photos/size" &gt;
-  <img=src="https://picsum.photos/150" alt="Desert">
-  <br />
+  <img=src="https: //picsum.photos/150" alt="Desert">
+    <br />
 
-  <img src="the image path" alt="Tells us what the image is about" />
-  <br>
-  You can use <a href="https://imgbb.com"> Imgbb </a> to get url for a picture
+    <img src="the image path" alt="Tells us what the image is about" />
+    <br>
+    You can use <a href="https://imgbb.com"> Imgbb </a> to get url for a picture
 </p>
 
 <hr>
@@ -714,12 +714,12 @@ bullet list html mdn on google to search how to use an element -->
   You can get a random image from this website.
   <br />
   &lt; img = src = "https://picsum.photos/size" &gt;
-  <img=src="https://picsum.photos/150" alt="Desert">
-  <br />
+  <img=src="https: //picsum.photos/150" alt="Desert">
+    <br />
 
-  <img src="the image path" alt="Tells us what the image is about" />
-  <br>
-  You can use <a href="https://imgbb.com"> Imgbb </a> to get url for a picture
+    <img src="the image path" alt="Tells us what the image is about" />
+    <br>
+    You can use <a href="https://imgbb.com"> Imgbb </a> to get url for a picture
 </p>
 
 <hr>
@@ -1062,7 +1062,7 @@ It has 3 unique properties.
 <hr />
 <h2>Web Design Typography and Design </h2>
 <p>
-2 Major text family
+  2 Major text family
 <ol>
   <li>Serif: Traditional, Modern</li>
   <li>Sans Serif: Simple, Sensible</li>
@@ -1076,14 +1076,13 @@ It has 3 unique properties.
   <li>Whitespace</li>
   <li>Audience</li>
 </ol>
- <br />
+<br />
 
- UX Design Layout:
+UX Design Layout:
 <ul>
   <li>F layout</li>
   <li>Z Layout</li>
 </ul>
-
 
 </p>
 
@@ -1107,14 +1106,84 @@ It has 3 unique properties.
   <br />
   call function - getMilk();
   <br />
-  
-  
+  pass a value into a func buyMilk(bottles)
+  <br />
+  Math.floor(num) - to round down
+  <br />
+  return gives ouput for functions
+  <br />
+  3 flavors for functions
+<ul>
+  <li>Vanilla - no input </li>
+  <li>Chocolate - input no output</li>
+  <li>Strawberry - input and output </li>
+</ul>
+<br />
+Math.pow(base, exp) - power
+Math.random()
+<br />
+Array is a collection of similar data : var Arr = []
+<br />
+.includes() - bool
+</p>
+<hr />
+<h2>Javascript with Web </h2>
+<p>
+  How to link javascript to html:
+<ol>
+  <li>Inline: onload="alert('Hello')"</li>
+  <li>Internal: <a href="https://www.w3schools.com/tags/tag_script.asp">script tag</a> </li>
+  <li>External: <a href="https://www.geeksforgeeks.org/javascript/what-is-external-javascript/">script tag</a> </li>
+</ol>
+Javascript is added at end of body if no defer is added. Defer helps the page load before hitting javascript.
+</p>
+<hr />
+<h2>Document Object Model (DOM)</h2>
+<p>
+  DOM = Document Object Model
+  <br />
+  It is a tree-like structure the browser creates to represent your webpage.
+  <br />
+  Anything in your HTML becomes a JavaScript object inside the DOM.
+  <br />
+  GET and SET
+  <br />
+  document.getElementsByTagName(); - gives array of element
+  <br />
+  document.getElementsByClassName(); - select based on class of element. also gives array
+  <br />
+  document.getElementByID(); - can be manipulated manually, its unique
+  <br />
+  document.querySelector(); - a single selector;
+  document.querySelectorAll(); - array
+  <br />
+  <a href="https://www.w3schools.com/jsref/dom_obj_style.asp">DOM Style Object Documentation</a>
 </p>
 
-
-
 <hr />
+<h2>JQuery</h2>
+<p>
+  We use $ instead of querySelectors to access an element
+  <br />
+  For examle: $('h2') is same as document.querySelector("h2");
+  <br />
+  $('h1').css('color'); for getting value
+<br />
+   $('h1').css('color', 'red'); for setting value
+  <br />
+  We can add and remove class. For example:
+<ul><li>$('h1').addClass("big-title"); or $('h1').removeClass("big-title");</li></ul>
+<br />
+We can check if an element has a particular class : using .hasClass("margin-top")
+<br />
+We can manipulate a text : using .text("Bye")
+  <br />
+We can manipulate attribute : using $('a').attr("href", "https://yahoo.com")
+    <br />
+We can add eventListners: using $('h1').click(function(){
+
+});
+</p>
 <p style="text-align:center; font-style:italic;">
   ✨ Created by Adewole Adeoshun — Web Development Notes ✨
 </p>
-
