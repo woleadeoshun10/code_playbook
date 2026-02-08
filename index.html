@@ -1168,44 +1168,46 @@ Javascript is added at end of body if no defer is added. Defer helps the page lo
   For examle: $('h2') is same as document.querySelector("h2");
   <br />
   $('h1').css('color'); for getting value
-<br />
-   $('h1').css('color', 'red'); for setting value
+  <br />
+  $('h1').css('color', 'red'); for setting value
   <br />
   We can add and remove class. For example:
-<ul><li>$('h1').addClass("big-title"); or $('h1').removeClass("big-title");</li></ul>
+<ul>
+  <li>$('h1').addClass("big-title"); or $('h1').removeClass("big-title");</li>
+</ul>
 <br />
 We can check if an element has a particular class : using .hasClass("margin-top")
 <br />
 We can manipulate a text : using .text("Bye")
-  <br />
+<br />
 We can manipulate attribute : using $('a').attr("href", "https://yahoo.com")
-    <br />
+<br />
 We can add eventListners: using $('h1').click(function(){
 
 });
 
 </p>
- 
+
 <hr />
 
 <h2>CLI</h2>
 <p>
   Here are some commands:
-  <ol>
-    <li>ls - list </li>
-    <li>cd - change directory </li>
-    <li>cd .. - change directory to root folder </li>
-    <li>opt + arrow - moves to beginning or end of word </li>
-    <li>mkdr - make new folder </li>
-    <li>touch - create a new file </li>
-    <li>code - open a new file in vs </li>
-    <li>rm - delete a file </li>
-    <li>rm * - delete all file </li>
-    <li>rm -r - remove a directory </li>
-    <li>pwd- tells entire path </li>
-    
+<ol>
+  <li>ls - list </li>
+  <li>cd - change directory </li>
+  <li>cd .. - change directory to root folder </li>
+  <li>opt + arrow - moves to beginning or end of word </li>
+  <li>mkdr - make new folder </li>
+  <li>touch - create a new file </li>
+  <li>code - open a new file in vs </li>
+  <li>rm - delete a file </li>
+  <li>rm * - delete all file </li>
+  <li>rm -r - remove a directory </li>
+  <li>pwd- tells entire path </li>
+
 </ol>
-  
+
 </p>
 
 <hr />
@@ -1216,14 +1218,57 @@ We can add eventListners: using $('h1').click(function(){
   It is an asynchronus event driven JS runtime.
   <br />
   fs - files system module <br />
-  NPM is an opensource code library, we initilize using:  npm init
+  NPM is an opensource code library, we initilize using: npm init
   <br />
-We can install using npm i package or npm install package <br />
+  We can install using npm i package or npm install package <br />
   Now we can use EJS so we can use import instead of require.
   <br />
-We use inquirer package to get input from user
+  We use inquirer package to get input from user
 </p>
 
+<hr />
+<h2>Express </h2>
+It is a framework for Node.js used to build API, Servers and web apps.
+<p>
+  There are six steps to create an Epress server:
+<ol>
+  <li>Create Directory</li>
+  <li>Create index.js</li>
+  <li>Intalize nom</li>
+  <li>Initialize Express</li>
+  <li>Write server app in index.js</li>
+  <li>Start Server</li>
+</ol>
+<br />
+<h3>HTTP</h3>
+Computers communicate with each other using http, It consists of
+<li>GET: request a resource from the server</li>
+<li>POST: Sending a resource to the server </li>
+<li>PUT: replace a whole resource </li>
+<li>PATCH: update a resource</li>
+<li>DELETE: to remove a resource </li>
+
+<br />
+HTTP RESPONSES:
+<li>(100-199) - Info</li>
+<li>(200-299)- success </li>
+<li>(300-399)- redirection </li>
+<li>(400-499)- client error</li>
+<li>(500-599)- server error</li>
+
+<br />
+Middlewares act as middle-man for requests. Body-Parser is a popular example for form datas
+<br />
+BodyParser used to get body for a form
+<br />
+Morgan used for login to console - app.use(morgan("tiny"));
+<br />
+logger to log req.metod and req.url
+<br />
+<h3>EJS - Template</h3>
+res.render("index.ejs"),{}
+<br />
+</p>
 
 <p style="text-align:center; font-style:italic;">
   ✨ Created by Adewole Adeoshun — Web Development Notes ✨
