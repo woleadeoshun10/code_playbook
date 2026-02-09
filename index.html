@@ -1274,7 +1274,7 @@ res.render("index.ejs"),{}
 <h2>Git and Version Control</h2>
 <p>
   We have different versions in Git to track our changes to a file. <br />
-  First we initialize git in a folder directory using git init, and then it becomes a working directory 
+  First we initialize git in a folder directory using git init, and then it becomes a working directory
   <br />
   Then use git add "fileName" to add to staging area
   <br />
@@ -1285,7 +1285,7 @@ res.render("index.ejs"),{}
   <br />
   git checkout fileName is used to revert to last commit
   <br />
-  git rm --cached -r .  is used to remove all files from staging area
+  git rm --cached -r . is used to remove all files from staging area
 </p>
 
 <hr />
@@ -1298,20 +1298,31 @@ res.render("index.ejs"),{}
   <br />
   We use ? for query parameters used for filtering and searching - https://bored-api.appbrewery.com/filter?type=social&participants=2
 
-<br />
-  Path parameters is something specific used to identify a unique resource in the api - https://bored-api.appbrewery.com/activity/5914292
-  
   <br />
-  •	JSON = text format for storing/transmitting data
+  Path parameters is something specific used to identify a unique resource in the api - https://bored-api.appbrewery.com/activity/5914292
+
+  <br />
+  • JSON = text format for storing/transmitting data
   <li>const obj = JSON.parse(data);</li>
   <br />
-	•	JavaScript object = actual data structure in memory
+  • JavaScript object = actual data structure in memory
   <li>const json = JSON.stringify(obj);</li>
   <br />
-  Axios is used for hitting endpoints and geting data from another api 
+  Axios is used for hitting endpoints and geting data from another api
   <br />
   You need a try catch block for axios
-  </p>
+</p>
+
+<h2>Database</h2>
+<p>
+  SQL Vs NoSQL
+  <br />
+  SQL - Relational database, Tables and record, reliable, vertically scalable, good for relationships and consistency
+  <br />
+  NoSQL - flexible, horizontally scalable
+  <br />
+  You can check w3schools for info and test here <a href="https://sqliteonline.com/">sqlliteonline</a>
+</p>
 
 <p style="text-align:center; font-style:italic;">
   ✨ Created by Adewole Adeoshun — Web Development Notes ✨
