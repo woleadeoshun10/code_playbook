@@ -1270,6 +1270,49 @@ res.render("index.ejs"),{}
 <br />
 </p>
 
+<hr />
+<h2>Git and Version Control</h2>
+<p>
+  We have different versions in Git to track our changes to a file. <br />
+  First we initialize git in a folder directory using git init, and then it becomes a working directory 
+  <br />
+  Then use git add "fileName" to add to staging area
+  <br />
+  Then we commit and add a message using git commit -m "Message" <br />
+  git log shows the latest commits made
+  <br />
+  git diff fileName shows the latest differences in a file
+  <br />
+  git checkout fileName is used to revert to last commit
+  <br />
+  git rm --cached -r .  is used to remove all files from staging area
+</p>
+
+<hr />
+
+<h2>API</h2>
+<p>
+  REST API is an API that follow a set of rules, the most important is using the HTTP Protocols, GET POST PUT PATCH DELETE
+  <br />
+  We have endpoints - /endpoint
+  <br />
+  We use ? for query parameters used for filtering and searching - https://bored-api.appbrewery.com/filter?type=social&participants=2
+
+<br />
+  Path parameters is something specific used to identify a unique resource in the api - https://bored-api.appbrewery.com/activity/5914292
+  
+  <br />
+  •	JSON = text format for storing/transmitting data
+  <li>const obj = JSON.parse(data);</li>
+  <br />
+	•	JavaScript object = actual data structure in memory
+  <li>const json = JSON.stringify(obj);</li>
+  <br />
+  Axios is used for hitting endpoints and geting data from another api 
+  <br />
+  You need a try catch block for axios
+  </p>
+
 <p style="text-align:center; font-style:italic;">
   ✨ Created by Adewole Adeoshun — Web Development Notes ✨
 </p>
